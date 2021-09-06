@@ -7,20 +7,31 @@ public class Registo_fer {
 
     public static void main(String[] args) {
         // TODO code application logic here
-        Scanner entrada = new Scanner(System.in);
-        Registo Registo[] = new Registo[10];
+       Scanner entrada = new Scanner(System.in);
 
-        for (int i = 0; i < 10; i++) {
-            Registo[i] = new Registo();
+        int n = 10;
+        String Marca[] = new String[n];
+        int talla[] = new int[n];
+        double serie[] = new double[n];
+        String modelo[] = new String[n];
+        for (int i = 0; i < n; i++) {
             System.out.println("DIME TU MARCA");
-            Registo[i].setMarca(entrada.next());
+            Marca[i] = entrada.next();
             System.out.println("DIME TU TALLA");
-            Registo[i].setTalla(entrada.nextDouble());
+            talla[i] = entrada.nextInt();
             System.out.println("DIME EL MODELO");
-            Registo[i].setModelo(entrada.next());
+            modelo[i] = entrada.next();
             System.out.println("DIME EL NUM DE SERIE");
-            Registo[i].setSerie(entrada.nextInt());
+            serie[i] = entrada.nextDouble();
         }
-            System.out.println(Arrays.toString(Registo));
+        for (int i = 0; i < n; i++) {
+            System.out.println(" MARCA:    " + Marca[i]);
+            System.out.println(" MODELO:   " + modelo[i]);
+            System.out.println(" SERIE: " + serie[i]);
+            System.out.println(" TALLA   " + talla[i]);
+            if (i!=n-1) {
+                System.out.println("_________ ");
+            }
+        }
     }
 }
