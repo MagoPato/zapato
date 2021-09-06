@@ -1,4 +1,4 @@
-package registo_fer;
+package registo_fer_2;
 
 public class Registo {
 

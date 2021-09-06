@@ -1,6 +1,5 @@
-package registo_fer;
+package registo_fer_2;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Registo_fer {
@@ -21,6 +20,8 @@ public class Registo_fer {
             System.out.println("DIME EL NUM DE SERIE");
             Registo[i].setSerie(entrada.nextInt());
         }
-            System.out.println(Arrays.toString(Registo));
+        for (int i = 0; i < 10; i++) {
+            System.out.println(Registo[i]);
+        }
     }
 }
